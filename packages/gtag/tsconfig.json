@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "gtag.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

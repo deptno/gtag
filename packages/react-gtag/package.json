@@ -1,0 +1,29 @@
+{
+  "name": "@deptno/react-gtag",
+  "version": "0.1.0",
+  "description": "gtag, typescript, react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deptno/gtag.git"
+  },
+  "keywords": [
+    "gtag",
+    "google",
+    "anlytics",
+    "react"
+  ],
+  "author": "Bonggyun Lee <deptno@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deptno/gtag/issues"
+  },
+  "homepage": "https://github.com/deptno/gtag#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.48",
+    "typescript": "^4.0.2"
+  }
+}
