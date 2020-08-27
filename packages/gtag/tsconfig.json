@@ -8,7 +8,8 @@
     "strictNullChecks": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.test.ts"
   ],
   "include": [
     "gtag.d.ts",
