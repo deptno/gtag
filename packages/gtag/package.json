@@ -1,7 +1,7 @@
 {
   "name": "@deptno/gtag",
-  "version": "0.1.3",
-  "description": "gtag, typescript, react",
+  "version": "0.1.4",
+  "description": "gtag, typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
