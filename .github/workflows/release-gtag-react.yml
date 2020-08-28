@@ -1,0 +1,37 @@
+name: release-gtag-react
+
+on:
+  push:
+    master:
+      paths:
+        - .github/workflows/release-gtag-react.yml
+        - packages/gtag-react/package.json
+        - packages/gtag-react/README.md
+
+defaults:
+  run:
+    working-directory: packages/gtag-react
+
+jobs:
+  release:
+    runs-on: release-gat
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: restore cache
+        id: restore-cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('package-lock.json') }}
+      - name: test
+        run: npm test
+      - name: build
+        run: npm run build --if-present
+      - name: publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

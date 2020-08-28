@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deptno/gtag.git"
+    "url": "git+https://github.com/deptno/gtag.git",
+    "directory": "packages/gtag"
   },
   "keywords": [
     "gtag",
