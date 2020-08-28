@@ -20,14 +20,7 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: restore cache
-        id: restore-cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ hashFiles('ackage-lock.json') }}
       - name: install package
-        if: steps.restore-cache.outputs.cache-hit != 'true'
         run: npm ci --ignore-scripts
       - name: test
         run: npm test
