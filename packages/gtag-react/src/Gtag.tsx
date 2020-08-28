@@ -1,4 +1,6 @@
-export function GTag(props: Props) {
+import React from 'react'
+
+export const GTag: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <>
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${props.id}`}/>

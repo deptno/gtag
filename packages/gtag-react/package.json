@@ -1,6 +1,6 @@
 {
   "name": "@deptno/gtag-react",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "gtag, typescript, react",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/deptno/gtag#readme",
   "devDependencies": {
+    "@types/react": "^16.9.48",
     "typescript": "^4.0.2"
   }
 }
