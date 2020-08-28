@@ -4,7 +4,7 @@
     "moduleResolution": "node",
     "inlineSourceMap": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "strictNullChecks": true,
     "declaration": true,
     "outDir": "dist"
