@@ -27,6 +27,9 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-build-${{ hashFiles('ackage-lock.json') }}
+      - name: install package
+        if: steps.restore-cache.outputs.cache-hit != 'true'
+        run: npm ci --ignore-scripts
       - name: test
         run: npm test
       - name: build
