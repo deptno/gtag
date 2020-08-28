@@ -26,7 +26,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-build-${{ hashFiles('package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
       - name: install package
         if: steps.restore-cache.outputs.cache-hit != 'true'
         run: npm ci --ignore-scripts
