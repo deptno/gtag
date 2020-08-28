@@ -1,6 +1,6 @@
 {
   "name": "@deptno/gtag-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "gtag, typescript, react",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
