@@ -2,10 +2,11 @@ name: release-gtag-react
 
 on:
   push:
-    master:
-      paths:
-        - .github/workflows/release-gtag-react.yml
-        - packages/gtag-react/package.json
+    branches:
+      - master
+    paths:
+      - .github/workflows/release-gtag-react.yml
+      - packages/gtag-react/package.json
         - packages/gtag-react/README.md
 
 defaults:

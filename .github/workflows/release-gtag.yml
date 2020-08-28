@@ -2,11 +2,12 @@ name: release-gtag
 
 on:
   push:
-    master:
-      paths:
-        - .github/workflows/release-gtag.yml
-        - packages/gtag/package.json
-        - packages/gtag/README.md
+    branches:
+      - master
+    paths:
+      - .github/workflows/release-gtag.yml
+      - packages/gtag/package.json
+      - packages/gtag/README.md
 
 defaults:
   run:
