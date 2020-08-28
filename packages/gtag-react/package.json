@@ -27,6 +27,7 @@
   "homepage": "https://github.com/deptno/gtag#readme",
   "devDependencies": {
     "@types/react": "^16.9.48",
+    "react": "^16.13.1",
     "typescript": "^4.0.2"
   }
 }
