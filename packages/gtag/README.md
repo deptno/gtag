@@ -43,9 +43,9 @@ action('user_custom_action_name', {
 ```
 
 ## package
-- [@deptno/gtag](packages/gtag)  
+- [@deptno/gtag](/packages/gtag)  
   typescripted gtag wrapper
-- [@deptno/gtag-react](packages/gtag-react)  
+- [@deptno/gtag-react](/packages/gtag-react)  
   gtag component
 
 ## license
