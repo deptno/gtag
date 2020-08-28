@@ -5,9 +5,7 @@ on:
     branches:
       - master
     paths:
-      - .github/workflows/release-gtag.yml
       - packages/gtag/package.json
-      - packages/gtag/README.md
 
 defaults:
   run:
