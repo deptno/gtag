@@ -2,8 +2,6 @@ name: release-gtag
 
 on:
   push:
-    branches:
-      - master
     paths:
       - packages/gtag/package.json
 

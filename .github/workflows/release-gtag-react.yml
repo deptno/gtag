@@ -2,8 +2,6 @@ name: release-gtag-react
 
 on:
   push:
-    branches:
-      - master
     paths:
       - packages/gtag-react/package.json
 

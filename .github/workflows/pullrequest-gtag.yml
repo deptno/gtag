@@ -2,8 +2,6 @@ name: pullrequest-gtag
 
 on:
   pull_request:
-    branches:
-      - master
     paths:
       - .github/workflows/pullrequest-gtag.yml
       - packages/gtag/*

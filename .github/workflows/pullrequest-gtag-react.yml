@@ -2,8 +2,6 @@ name: release-gtag-react
 
 on:
   pull_request:
-    branches:
-      - master
     paths:
       - .github/workflows/pullrequest-gtag-react.yml
       - packages/gtag-react/*
