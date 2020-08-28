@@ -3,9 +3,10 @@
     "target": "esnext",
     "moduleResolution": "node",
     "inlineSourceMap": true,
-    "noEmit": true,
     "esModuleInterop": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "declaration": true,
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules",

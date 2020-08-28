@@ -1,10 +1,12 @@
-# @deptno/gtag
+# @deptno/react-gtag
 
 > @WIP
 
+gtag component
+
 ## install
 ```shell script
-npm i @deptno/{gtag,react-gtag}
+npm i @deptno/react-gtag
 ```
 
 ## api
@@ -24,15 +26,6 @@ import {config, set, event, action} from '@deptno/gtag'
 import {GTag} from '@deptno/gtag-react'
 
 export const GlobalLayoutComponent = _ => {
-  useEffect(() => {
-    action('user_custom_action_name', {
-      event_category: 'user_category',
-    })
-    action('user_custom_action_name', {
-      event_category: 'user_category',
-    })
-  }, [])
-
   return (
     <>
       <!-- ... -->
@@ -40,8 +33,6 @@ export const GlobalLayoutComponent = _ => {
     </>
   )
 }
-
-
 ```
 
 ## package
