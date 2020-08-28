@@ -1,4 +1,5 @@
-# @deptno/react-gtag
+# @deptno/gtag-teact
+[![npm](https://img.shields.io/npm/dt/@deptno/gtag-react.svg?style=for-the-badge)](https://www.npmjs.com/package/@deptno/gtag-react)
 
 > @WIP
 
@@ -6,7 +7,7 @@ gtag component
 
 ## install
 ```shell script
-npm i @deptno/react-gtag
+npm i @deptno/gtag-react
 ```
 
 ## api
@@ -36,9 +37,9 @@ export const GlobalLayoutComponent = _ => {
 ```
 
 ## package
-- @deptno/gtag  
+- [@deptno/gtag](packages/gtag) [![npm](https://img.shields.io/npm/dt/@deptno/gtag.svg?style=for-the-badge)](https://www.npmjs.com/package/@deptno/gtag)
   typescripted gtag wrapper
-- @deptno/react-gtag
+- [@deptno/gtag-react](packages/gtag-gtag) [![npm](https://img.shields.io/npm/dt/@deptno/gtag-react.svg?style=for-the-badge)](https://www.npmjs.com/package/@deptno/gtag-react)
   gtag component
 
 ## license

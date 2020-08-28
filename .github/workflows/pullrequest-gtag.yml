@@ -13,7 +13,7 @@ defaults:
     working-directory: packages/gtag
 
 jobs:
-  release:
+  pullrequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1

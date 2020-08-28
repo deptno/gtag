@@ -13,8 +13,8 @@ defaults:
     working-directory: packages/gtag-react
 
 jobs:
-  release:
-    runs-on: release-gat
+  pullrequest:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
