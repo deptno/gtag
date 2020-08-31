@@ -4,3 +4,5 @@ export * from './config'
 export * from './set'
 export * from './event'
 export * from './action'
+export * from '../gtag'
+

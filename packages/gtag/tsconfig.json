@@ -14,7 +14,7 @@
   ],
   "include": [
     "gtag.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "global.d.ts",
+    "**/*.ts"
   ]
 }

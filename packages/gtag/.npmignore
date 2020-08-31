@@ -1,3 +1,4 @@
 **/*
 !dist/**/*
 !gtag.d.ts
+!global.d.ts

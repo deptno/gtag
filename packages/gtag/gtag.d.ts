@@ -1,7 +1,7 @@
-export = Gtag;
-export as namespace Gtag;
+export default G;
+export as namespace G;
 
-declare namespace Gtag {
+declare namespace G {
   type GTag = {
     (command: Command, config?: ConfigType | EventName | Date, params?: EventParams | ControlParams | ConfigGaMeasurementIdParams | ActionParams): void
   }
@@ -42,7 +42,6 @@ declare namespace Gtag {
     | 'view_item_list'
     | 'view_promotion'
     | 'view_search_results'
-
   type EventParams =
     | AddToCartParams
     | AddToWishlistParams
@@ -65,7 +64,6 @@ declare namespace Gtag {
     | ViewItemListParams
     | ViewPromotionParams
     | ViewSearchResultsParams
-
 
   type AddToCartParams = { value: value, currency: currency, items: items }
   type AddToWishlistParams = { value: value, currency: currency, items: items }
@@ -144,11 +142,4 @@ declare namespace Gtag {
   type tax = currency
   type transaction_id = string
   type value = number
-}
-
-declare global {
-  interface Window {
-    dataLayer: unknown[]
-    gtag: Gtag.GTag
-  }
 }
