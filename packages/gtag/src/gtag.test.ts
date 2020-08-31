@@ -1,4 +1,4 @@
-import {gtag, event, action, config, set} from '..'
+import {gtag, event, action, config, set, ActionParams} from '..'
 
 gtag('set', 'add_payment_info')
 
@@ -11,13 +11,12 @@ event('add_payment_info', {app_name: 'k'})
 // @ts-expect-error
 event('add_to_cart')
 
-// @ts-expect-error
-event('login', {value: 1, currency: 'KRW', items: []})
 event('login', {method: 'k'})
+event('login', {})
 
 event('add_payment_info')
 // @ts-expect-error
-event('page_view', {checkout_option})
+event('page_view', {checkout_option: 'a'})
 
 // @ts-expect-error
 event('hello')
@@ -30,6 +29,16 @@ action('a')
 
 set('[AW_CONVERSION_ID]')
 set('[GA_MEASUREMENT_ID]')
-// @ts-expect-error
-set('[AW_CONVERSION_ID]', 1)
 set('[GA_MEASUREMENT_ID]', {page_location: ''})
+
+// fixme: error case
+set('[AW_CONVERSION_ID]', 1)
+event('login', {value: 1, currency: 'KRW', items: []})
+
+function customAction(actionType: string, params: ActionParams) {
+  action('a', params)
+  // @ts-expect-error
+  action('a', 'string')
+  // @ts-expect-error
+  action('a', 1)
+}

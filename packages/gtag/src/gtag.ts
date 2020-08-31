@@ -1,5 +1,5 @@
-import G from '../gtag'
+import {GTag} from '../gtag'
 
-export const gtag: G.GTag = (command, value, params?) => {
+export const gtag: GTag = (command, value, params?) => {
   window.gtag(command, value, params)
 }
