@@ -1,4 +1,4 @@
-export default G;
+export = G;
 export as namespace G;
 
 declare namespace G {
