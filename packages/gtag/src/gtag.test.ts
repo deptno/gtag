@@ -12,7 +12,10 @@ event('add_payment_info', {app_name: 'k'})
 event('add_to_cart')
 
 event('login', {method: 'k'})
+// @ts-expect-error
 event('login', {})
+// @ts-expect-error
+event('login', {app_id: 12})
 
 event('add_payment_info')
 // @ts-expect-error
@@ -31,8 +34,9 @@ set('[AW_CONVERSION_ID]')
 set('[GA_MEASUREMENT_ID]')
 set('[GA_MEASUREMENT_ID]', {page_location: ''})
 
-// fixme: error case
+// @ts-expect-error
 set('[AW_CONVERSION_ID]', 1)
+// @ts-expect-error
 event('login', {value: 1, currency: 'KRW', items: []})
 
 function customAction(actionType: string, params: ActionParams) {
