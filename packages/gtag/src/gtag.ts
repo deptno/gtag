@@ -18,6 +18,9 @@ export type ConfigGaMeasurementIdParams = {
   // @default: true
   send_page_view?: boolean
 }
+export type ConfigUserIdParams = {
+  user_id: string
+}
 export type EventName =
   | 'add_payment_info'
   | 'add_to_cart'
