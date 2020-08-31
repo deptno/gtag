@@ -13,8 +13,7 @@
     "**/*.test.ts"
   ],
   "include": [
-    "gtag.d.ts",
-    "global.d.ts",
+    "src/global.d.ts",
     "**/*.ts"
   ]
 }

@@ -1,4 +1,4 @@
-import G from '../gtag'
+import * as G from './gtag'
 
 export function set(config: string, params: G.ControlParams): void
 export function set(config: string, params: G.ConfigGaMeasurementIdParams): void

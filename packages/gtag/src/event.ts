@@ -1,4 +1,4 @@
-import G from '../gtag'
+import * as G from './gtag'
 
 export function event(name: 'add_payment_info'): void
 export function event(name: 'add_to_cart', params: G.AddToCartParams): void

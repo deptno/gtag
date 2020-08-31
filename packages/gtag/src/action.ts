@@ -1,5 +1,5 @@
-import {ActionParams} from '../gtag'
+import * as G from './gtag'
 
-export function action(action: string, params: ActionParams): void {
+export function action(action: string, params: G.ActionParams): void {
   window.gtag('event', action, params)
 }
