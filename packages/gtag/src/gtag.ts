@@ -127,7 +127,7 @@ export type item = {
   id: string
   location_id: string
   name: string
-  price: currency
+  price: number
   quantity: number
 }
 export type method = string
@@ -141,7 +141,7 @@ export type promotion = {
 }
 export type screen_name = string
 export type search_term = string
-export type shipping = currency
-export type tax = currency
+export type shipping = number
+export type tax = number
 export type transaction_id = string
 export type value = number
