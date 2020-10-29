@@ -118,17 +118,41 @@ export type coupon = string
 export type currency = 'KRW' | 'USD' | string // ISO_4217
 export type description = string
 export type fatal = boolean
-export type items = item[]
-export type item = {
-  brand: string
-  category: string
-  creative_name: string
-  creative_slot: string
-  id: string
-  location_id: string
-  name: string
-  price: number
-  quantity: number
+export type items = viewItem[] | purchaseItem[]
+export type viewItem = {
+  item_id: string
+  item_name: string
+  item_list_name?: string
+  item_list_id?: string
+  index?: number
+  item_brand?: string
+  item_category?: string
+  item_category2?: string
+  item_category3?: string
+  item_category4?: string
+  item_category5?: string
+  item_variant?: string
+  affiliation?: string
+  discount?: number
+  coupon?: string
+  price?: number
+}
+export type purchaseItem = {
+  item_id: string
+  item_name: string
+  item_brand?: string
+  item_category?: string
+  item_category2?: string
+  item_category3?: string
+  item_category4?: string
+  item_category5?: string
+  item_variant?: string
+  affiliation?: string
+  discount?: number
+  coupon?: string
+  price?: number
+  currency?: string
+  quantity?: number
 }
 export type method = string
 export type name = string
