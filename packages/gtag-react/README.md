@@ -1,4 +1,4 @@
-# @deptno/gtag-teact
+# @deptno/gtag-react
 [![npm](https://img.shields.io/npm/dt/@deptno/gtag-react.svg?style=for-the-badge)](https://www.npmjs.com/package/@deptno/gtag-react)
 
 > @WIP
